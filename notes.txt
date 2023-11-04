@@ -1,0 +1,133 @@
+
+// TAKE USER INPUT
+next() => This is used for single sentence
+nextLine() => This is used for multiple sentence
+nextInt() => This is used for Integer
+nextFloat() => This is used for Float value purpose
+
+// CONDITIONAL STATEMENT
+if
+else if
+else
+switch
+break
+continue
+
+// LOOPS
+for Loop
+while Loop
+do while Loop
+
+**FOR LOOPS
+for(initialization; condition; updation){
+    //Statements
+}
+ex:- for(int i=0;i<=10;i++){
+            System.out.println(i);
+        }
+
+**WHILE LOOP
+while(condition){
+    //Statements
+}
+ex:- int i=1;
+        while(i<=5){
+            System.out.println(i);
+            i++;
+        }
+
+**DO WHILE LOOP
+do{
+    //Statements
+}while(condition);
+
+ex:-   int n = 5;
+        do {
+            System.out.println(n);
+            n--;
+        } while (n >= 0)
+
+
+**INFINITE LOOP
+import java.util.*;
+public class functions {
+
+    public static void main(String[] args) {
+        int i=0;
+        do {
+            System.out.println(i);
+            i--;
+        } while (i<=5);
+    }
+}
+
+
+// FUNCTIONS-
+In java, Function is a block of code-which take some input,perform some operation, and return some output, This is called Functions.
+
+returnType FunctionName(type arg1, type arg2){
+    //Operation Code..
+}
+
+**Example:-
+        import java.util.*;
+public class functions {
+    public static void printMyName(String name){    //Function Declare
+        System.out.println("My name is: "+name);
+        return;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String name=sc.nextLine();
+
+        printMyName(name);      //Call the Function
+    }
+    
+}
+
+**
+import java.util.*;
+public class functions {
+   public static int calculateSum(int a, int b){
+        int sum=a+b;
+        System.out.println("Sum of a and b is: "+sum);
+        return sum;
+   }
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter a: ");
+       int a=sc.nextInt();
+       System.out.print("Enter b: ");
+       int b=sc.nextInt();
+
+       calculateSum(a, b);
+    }
+}
+
+**
+import java.util.*;
+
+public class functions {
+  public static void calculateFactorial(int n){
+    int factorial=1;
+    if(n<1){
+        System.out.println("Please enter a valid number..!");
+        return;
+    }
+    for(int i=1;i<=n;i++){
+        factorial=factorial*i;
+    }
+    System.out.println("Factorial of n is: "+factorial);
+  }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter n value: ");
+        int n = sc.nextInt();
+
+        calculateFactorial(n);
+    }
+
+}
+
+
+

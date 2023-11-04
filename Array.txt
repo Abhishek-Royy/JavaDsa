@@ -1,0 +1,120 @@
+
+//DEFINE ARRAY
+int[]arr=new int[5];
+        arr[0]=25;
+        arr[1]=12;
+        arr[2]=29;
+        arr[3]=74;
+        arr[4]=31;
+
+//PRINT ALL ARRAY ELEMENT
+        for (int elem : arr) {
+            System.out.println(elem);
+        }
+
+        // for(int i=0;i<=arr.length;i++){
+        //     System.out.println(arr[i]);
+        // }
+
+//ANOTHER METHOD TO DEFINE ARRAY
+int arr[]={2,5,7,8}
+for(int elem:arr){
+    System.out.println(elem)
+}
+
+//INPUT & OUTPUT FROM USER
+import java.util.*;
+
+public class arrays {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.print("Please enter the Array Length: ");
+        int length = sc.nextInt();
+
+        int arr[] = new int[length];
+
+        //Input
+         for(int i=0;i<arr.length;i++){
+                System.out.print("Please enter "+i+" index element: ");
+                arr[i]=sc.nextInt();
+            }
+
+        //Output
+        for (int elem : arr) {
+            System.out.println(elem);    
+            
+        }
+    }
+
+}
+
+//TRAVERSING EACH ELEMENT AND FIND THE MATCHD VALUE INDEX
+    (LINEAR SEARCH)
+import java.util.*;
+
+public class arrays {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        /* Take an Array input from user. Search for a given number X and print the index at which its occur ? */
+        System.out.print("Enter the Array Length: ");
+        int length=sc.nextInt();
+        int arr[]=new int[length];
+
+        for(int i=0;i<arr.length;i++){
+            System.out.print("Enter element: ");
+            arr[i]=sc.nextInt();
+        }
+
+        // X input..
+        System.out.print("Enter searching elem X: ");
+        int x=sc.nextInt();
+
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==x){
+                System.out.print("The matched element index is: "+i);
+                break;
+            }
+        }
+
+    }
+}
+
+
+//TO FIND THE MAXIMUM AND MINIMUM VALUE FROM AN GIVEN ARRAY ELEMENT ?
+import java.util.*;
+
+public class arrays{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the size of array: ");
+        int size=sc.nextInt();
+
+        int arr[]=new int[size];
+
+        //Input
+        for(int i=0;i<arr.length;i++){
+            System.out.print("Enter each element: ");
+            arr[i]=sc.nextInt();
+        }
+
+        //MIN_VALUE & MAX_VALUE
+        int min=Integer.MAX_VALUE;
+        int max=Integer.MIN_VALUE;
+
+        //Output
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
+            if(arr[i]<min){
+                min=arr[i];
+            }
+        }
+        System.out.println("The maximum value is: "+max);
+        System.out.print("The minimum value is: "+min);
+    }
+}
+
