@@ -1,0 +1,18 @@
+
+* charAt() -> used for print the every array element , each word.
+* .compareTo() -> used for compare two string.
+    .compareTo() - will check 3 things
+    1. string1 > string2  = it will return a +ve value.
+    2. string1 == string2 = it will return 0.
+    3. string1 < string2  = it will return a -ve value.
+
+* .substring -> used for get a substring inside from a string.
+    ~ basically substring will did two things. 
+        1. begining substring index
+        2. ending substring index
+    .substring(begin index, end index).
+    ~ if the last index of a string is the ending index, then we don't need to pass ending index.
+
+** string are immutable
+    if one time we create a string in our memory, then we cannot change it
+
