@@ -1,0 +1,103 @@
+** Reverse 5 to 1 print ?
+    public class recursionClass1 {
+    public static void printNumber(int n) {
+        if (n == 0) {
+            return;
+        }
+        System.out.println(n);
+        printNumber(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int n = 5;
+        printNumber(n);
+    }
+
+}
+
+
+** Print first n Natural number ?
+    public class recursionClass1 {
+    private static int sum = 0;
+
+    public static void calculateSum(int n) {
+
+        if (n <= 0) {
+            return;
+        }
+
+        calculateSum(n - 1);
+        sum = sum + n;
+    }
+
+    public static void main(String[] args) {
+        int n = 5;
+        calculateSum(n);
+        System.out.print("Sum is: "+sum);
+    }
+
+}
+
+** Another method..
+    public class recursionClass1 {
+    public static void calculateSum(int i, int n, int sum) {
+        if (i == n) {
+            sum = sum + i;
+            System.out.print("sum is: " + sum);
+            return;
+        }
+        sum += i;
+        calculateSum(i + 1, n, sum);
+    }
+
+    public static void main(String[] args) {
+        calculateSum(1, 5, 0);
+    }
+}
+
+
+** Calculate Factorial..?
+    public class recursionClass1 {
+    public static void calculateSum(int i, int n, int sum) {
+        if (i == n) {
+            sum = sum + i;
+            System.out.print("sum is: " + sum);
+            return;
+        }
+        sum += i;
+        calculateSum(i + 1, n, sum);
+    }
+
+    public static void main(String[] args) {
+        calculateSum(1, 5, 0);
+    }
+}
+
+
+
+** POWER Calculate
+    public class recursionClass1 {
+    public static int calcPower(int i, int n) {
+
+        if (n == 0) {
+            return 1;
+        }
+        if (i == 0) {
+            return 0;
+        }
+        int iPownm1 = calcPower(i, n - 1);
+        int iPow = i * iPownm1;
+        return iPow;
+    }
+
+    public static void main(String[] args) {
+        int i = 2;
+        int n = 5;
+        int ans = calcPower(i, n);
+        System.out.println("Answer is: " + ans);
+    }
+}
+
+
+
+**
